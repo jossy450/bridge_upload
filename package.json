@@ -1,14 +1,14 @@
 {
   "name": "bridgestone-react-website",
   "version": "1.0.0",
-  "private": "",
+  "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-google-autocomplete": "^2.7.3",
     "react-router-dom": "^7.1.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^3.1.0",
@@ -18,7 +18,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -40,12 +42,6 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
-  }
-
-  "homepage": "https://<your-github-username>.github.io/<repository-name>",
-"scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
-}
-
+  },
+  "homepage": "https://jossy450.github.io/bridge_upload"
 }

@@ -1,6 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import React from 'react';
 import './Header.css';
+import logo from './images/bridge_logo.png'; // Adjust the relative path as needed
+
 
 function Header() {
   return (
@@ -26,7 +28,7 @@ function Header() {
         <div className="logo">
           {/* Wrap the logo with NavLink */}
           <NavLink to="/" className="logo-link">
-            <img src="/images/bridge_logo.png" alt="Bridgestone Logo" />
+          <img src={logo} alt="Logo" />
             <span>Bridgestone Recruitment</span>
           </NavLink>
         </div>
