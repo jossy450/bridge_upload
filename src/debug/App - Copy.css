@@ -1,0 +1,218 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9; /* Subtle background */
+}
+
+h1, h2, h3 {
+  color: #004080; /* Branding color */
+}
+
+p {
+  line-height: 1.6;
+  color: #555; /* Subtle text color */
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004080;
+  color: white;
+  padding: 10px 20px;
+  flex-wrap: wrap; /* Prevent overflow for many links */
+}
+
+.header .logo {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.header .nav {
+  padding: 10px;
+  text-align: center;
+}
+
+.header .nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+.header .nav a:hover {
+  text-decoration: underline;
+  color: #18bc9c; /* Highlight color */
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0; /* Add vertical padding */
+  background-color: #f4f4f4;
+}
+
+/* Slider Section */
+.slider-container {
+  margin: 0 auto;
+  width: 80%;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+
+.slide {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  gap: 20px; /* Space between image and text */
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+  text-align: left; /* Align text content */
+}
+
+/* Centering the image */
+.slider-image {
+  width: 40%; /* Maintain the reduced image size */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto; /* Center the image horizontally */
+  display: block; /* Ensure the image behaves like a block element */
+}
+
+.slide-content {
+  width: 60%;
+}
+
+.slide-content h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.slide-content p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.slick-prev, .slick-next {
+  z-index: 2; /* Ensure navigation arrows are visible */
+  color: #333;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  opacity: 1;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 20px; /* Further away from the content */
+}
+
+/* Welcome Section */
+.welcome {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.welcome h2 {
+  font-size: 2.5em;
+}
+
+.welcome p {
+  font-size: 1.2em;
+}
+
+/* Services Section */
+.services {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-item {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.service-item h3 {
+  font-size: 1.5em;
+}
+
+.service-item p {
+  font-size: 1.1em;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.testimonial p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.testimonial h4 {
+  font-size: 1.1em;
+}
+
+/* Footer */
+.footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+
