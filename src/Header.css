@@ -1,12 +1,16 @@
-/* Top Bar Styles */
+/* General Styles */
+header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .top-bar {
   background-color: #004080;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 0px;
-  font-size: 0.6em;
+  padding: 5px 20px;
+  font-size: 0.9em;
 }
 
 .social-icons a {
@@ -19,22 +23,17 @@
   text-decoration: underline;
 }
 
-/* Menu Bar Styles */
 .menu-bar {
   background-color: white;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0px 0px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  padding: 10px 20px;
   position: sticky;
   top: 0;
   z-index: 1000;
-  font-size: 0.7em;
-  height: 40px;
 }
 
-/* Logo Link */
 .logo {
   display: flex;
   align-items: center;
@@ -44,7 +43,6 @@
 .logo img {
   width: 40px;
   height: 40px;
-  object-fit: contain;
 }
 
 .logo span {
@@ -53,28 +51,54 @@
   color: #004080;
 }
 
-.logo-link {
-  text-decoration: none;
+.menu-toggle {
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.nav {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
-.logo-link:hover span {
-  color: #0073e6;
-}
-
-/* Navigation Links */
 .nav a {
-  color: #333;
-  margin: 0 15px;
   text-decoration: none;
+  color: #333;
   font-size: 1.1em;
   transition: color 0.3s;
 }
 
-.nav a:hover,
-.nav .active-link {
+.nav a:hover {
   color: #004080;
-  font-weight: bold;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav a {
+    padding: 10px 20px;
+    text-align: center;
+    border-bottom: 1px solid #f4f4f4;
+  }
 }
